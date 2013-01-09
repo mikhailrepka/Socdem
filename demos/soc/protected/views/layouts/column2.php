@@ -1,0 +1,21 @@
+<?php /* @var $this Controller */ ?>
+<?php $this->beginContent('//layouts/main'); ?>
+<div class="span-19">
+	<div id="content">
+		<?php echo $content; ?>
+	</div><!-- content -->
+</div>
+<div class="span-5 last">
+	<div id="sidebar">
+	<?php
+	/*
+	 * sidebarData = array(
+	 * 		'view' => string,
+	 * 		'data' => array
+	 * )
+	 */
+	$this->widget('SidebarWidget', array('data'=>$this->sidebarData));
+	?>
+	</div><!-- sidebar -->
+</div>
+<?php $this->endContent(); ?>

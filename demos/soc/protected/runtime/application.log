@@ -1,0 +1,460 @@
+2012/12/21 17:06:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_test.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in E:\server\home\localhost\www\yii\testing\demos\soc\index.php (13)
+2012/12/21 18:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:484
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(271): CController->missingAction('')
+#1 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testing/demos/soc/?r=login
+---
+2012/12/21 18:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:484
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(271): CController->missingAction('')
+#1 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testing/demos/soc/?r=login
+---
+2012/12/21 18:40:13 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.username" is not defined.' in E:\server\home\localhost\www\yii\testing\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCriteria.php(161): CComponent->__set('username', 'pahom')
+#1 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\server\home\localhost\www\yii\testing\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'username=:usern...', Array, Array, '`t`.')
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\protected\components\UserIdentity.php(34): CActiveRecord->findByAttributes('username=:usern...', Array)
+#5 E:\server\home\localhost\www\yii\testing\demos\soc\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#6 E:\server\home\localhost\www\yii\testing\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#7 E:\server\home\localhost\www\yii\testing\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#8 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#9 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(53): CModel->validate()
+#10 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionIndex()
+#11 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#14 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#16 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#17 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=login
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php?r=login
+---
+2012/12/21 18:40:55 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.username" is not defined.' in E:\server\home\localhost\www\yii\testing\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCriteria.php(161): CComponent->__set('username', 'pahom')
+#1 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\server\home\localhost\www\yii\testing\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'username=:usern...', Array, Array, '`t`.')
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\protected\components\UserIdentity.php(34): CActiveRecord->findByAttributes('username=:usern...', Array)
+#5 E:\server\home\localhost\www\yii\testing\demos\soc\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#6 E:\server\home\localhost\www\yii\testing\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#7 E:\server\home\localhost\www\yii\testing\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#8 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#9 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(53): CModel->validate()
+#10 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionIndex()
+#11 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#14 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#16 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#17 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=login
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php?r=login
+---
+2012/12/21 18:42:59 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.username" is not defined.' in E:\server\home\localhost\www\yii\testing\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCriteria.php(161): CComponent->__set('username', 'pahom')
+#1 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\server\home\localhost\www\yii\testing\framework\db\schema\CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\server\home\localhost\www\yii\testing\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'username=:usern...', Array, Array, '`t`.')
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\protected\components\UserIdentity.php(34): CActiveRecord->findByAttributes('username=:usern...', Array)
+#5 E:\server\home\localhost\www\yii\testing\demos\soc\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#6 E:\server\home\localhost\www\yii\testing\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#7 E:\server\home\localhost\www\yii\testing\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#8 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#9 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(53): CModel->validate()
+#10 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionIndex()
+#11 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#14 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#16 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#17 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/testing/demos/soc/?r=login
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/?r=login
+---
+2012/12/21 18:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:484
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(271): CController->missingAction('logout')
+#1 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('logout')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('site/logout')
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=site/logout
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php
+---
+2012/12/21 19:08:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:484
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(271): CController->missingAction('logout')
+#1 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('logout')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('site/logout')
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=site/logout
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php
+---
+2012/12/21 19:08:36 [error] [exception.CException] exception 'CException' with message 'Property "CCompareValidator.0" is not defined.' in E:\server\home\localhost\www\yii\testing\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\validators\CValidator.php(190): CComponent->__set('0', 'compareAttribut...')
+#1 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(285): CValidator::createValidator('compare', Object(RegisterForm), 'password', Array)
+#2 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(259): CModel->createValidators()
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(302): CModel->getValidators('username')
+#4 E:\server\home\localhost\www\yii\testing\framework\web\helpers\CHtml.php(1197): CModel->isAttributeRequired('username')
+#5 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CActiveForm.php(563): CHtml::activeLabelEx(Object(RegisterForm), 'username', Array)
+#6 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\login\register.php(28): CActiveForm->labelEx(Object(RegisterForm), 'username')
+#7 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#8 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(870): CBaseController->renderFile('E:\server\home\...', Array, true)
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#11 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(86): CController->render('register', Array)
+#12 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionRegister()
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#16 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('register')
+#18 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login/register')
+#19 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=login/register
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php?r=login
+---
+2012/12/21 19:09:48 [error] [exception.CException] exception 'CException' with message 'Property "CCompareValidator.0" is not defined.' in E:\server\home\localhost\www\yii\testing\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\validators\CValidator.php(190): CComponent->__set('0', Array)
+#1 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(285): CValidator::createValidator('compare', Object(RegisterForm), 'password', Array)
+#2 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(259): CModel->createValidators()
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CModel.php(302): CModel->getValidators('username')
+#4 E:\server\home\localhost\www\yii\testing\framework\web\helpers\CHtml.php(1197): CModel->isAttributeRequired('username')
+#5 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CActiveForm.php(563): CHtml::activeLabelEx(Object(RegisterForm), 'username', Array)
+#6 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\login\register.php(28): CActiveForm->labelEx(Object(RegisterForm), 'username')
+#7 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#8 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(870): CBaseController->renderFile('E:\server\home\...', Array, true)
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#11 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(86): CController->render('register', Array)
+#12 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionRegister()
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#16 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('register')
+#18 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login/register')
+#19 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=login/register
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php?r=login
+---
+2012/12/21 19:14:03 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "testField".' in E:\server\home\localhost\www\yii\testing\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\login\register.php(47): CComponent->__call('testField', Array)
+#1 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\login\register.php(47): CActiveForm->testField(Object(RegisterForm), 'email')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#3 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#4 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(870): CBaseController->renderFile('E:\server\home\...', Array, true)
+#5 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#6 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(86): CController->render('register', Array)
+#7 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionRegister()
+#8 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#11 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('register')
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login/register')
+#14 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=login/register
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/?r=login
+---
+2012/12/21 23:24:44 [error] [exception.CException] exception 'CException' with message 'CoverWidget cannot find the view "slideshow".' in E:\server\home\localhost\www\yii\testing\framework\web\widgets\CWidget.php:246
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\demos\soc\protected\widgets\CoverWidget.php(22): CWidget->render('slideshow')
+#1 E:\server\home\localhost\www\yii\testing\demos\soc\protected\widgets\CoverWidget.php(15): CoverWidget->renderSlideshow()
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(174): CoverWidget->run()
+#3 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\layouts\main.php(29): CBaseController->widget('CoverWidget', Array)
+#4 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#5 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#6 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('E:\server\home\...', Array, true)
+#7 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 E:\server\home\localhost\www\yii\testing\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#14 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(785): CBaseController->renderFile('E:\server\home\...', Array, true)
+#15 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(60): CController->render('index', Array)
+#16 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionIndex()
+#17 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#20 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#22 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#23 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/testing/demos/soc/?r=login
+---
+2012/12/21 23:25:48 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.0" is not defined.' in E:\server\home\localhost\www\yii\testing\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CWidgetFactory.php(162): CComponent->__set('0', Array)
+#1 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(LoginController), 'zii.widgets.CMe...', Array)
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\layouts\main.php(37): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#5 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#6 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('E:\server\home\...', Array, true)
+#7 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 E:\server\home\localhost\www\yii\testing\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#14 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(785): CBaseController->renderFile('E:\server\home\...', Array, true)
+#15 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(60): CController->render('index', Array)
+#16 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionIndex()
+#17 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#20 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#22 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#23 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/testing/demos/soc/?r=login
+---
+2012/12/21 23:29:41 [error] [exception.CException] exception 'CException' with message 'CoverWidget cannot find the view "slideshow".' in E:\server\home\localhost\www\yii\testing\framework\web\widgets\CWidget.php:246
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\demos\soc\protected\widgets\CoverWidget.php(22): CWidget->render('slideshow')
+#1 E:\server\home\localhost\www\yii\testing\demos\soc\protected\widgets\CoverWidget.php(15): CoverWidget->renderSlideshow()
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(174): CoverWidget->run()
+#3 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\layouts\main.php(29): CBaseController->widget('CoverWidget', Array)
+#4 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#5 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#6 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('E:\server\home\...', Array, true)
+#7 E:\server\home\localhost\www\yii\testing\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 E:\server\home\localhost\www\yii\testing\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 E:\server\home\localhost\www\yii\testing\demos\soc\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(127): require('E:\server\home\...')
+#13 E:\server\home\localhost\www\yii\testing\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\server\home\...', Array, true)
+#14 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(785): CBaseController->renderFile('E:\server\home\...', Array, true)
+#15 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\LoginController.php(60): CController->render('index', Array)
+#16 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): LoginController->actionIndex()
+#17 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#20 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('')
+#22 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('login')
+#23 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/testing/demos/soc/?r=login
+---
+2012/12/22 00:42:37 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "tvonline".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:879
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(783): CController->renderPartial('tvonline', NULL, true)
+#1 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\SiteController.php(94): CController->render('tvonline')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): SiteController->actionTvOnline()
+#3 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#8 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('tvonline')
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('site/tvonline')
+#11 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=site/tvonline
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php?r=site/albums
+---
+2012/12/22 01:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Album not found' in E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\SiteController.php:63
+Stack trace:
+#0 [internal function]: SiteController->actionAlbums('18')
+#1 E:\server\home\localhost\www\yii\testing\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#8 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('albums')
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('site/albums')
+#11 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=site/albums&id=18
+---
+2012/12/22 12:26:18 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "messages".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:879
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(783): CController->renderPartial('messages', NULL, true)
+#1 E:\server\home\localhost\www\yii\testing\demos\soc\protected\controllers\SiteController.php(119): CController->render('messages')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\actions\CInlineAction.php(50): SiteController->actionMessages()
+#3 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 E:\server\home\localhost\www\yii\testing\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(292): CFilterChain->run()
+#8 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('messages')
+#10 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('site/messages')
+#11 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=site/messages
+---
+2012/12/22 12:27:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "messaes".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:484
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(271): CController->missingAction('messaes')
+#1 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('messaes')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('site/messaes')
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=site/messaes
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php?r=site/index
+---
+2012/12/22 12:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "messgaes".' in E:\server\home\localhost\www\yii\testing\framework\web\CController.php:484
+Stack trace:
+#0 E:\server\home\localhost\www\yii\testing\framework\web\CController.php(271): CController->missingAction('messgaes')
+#1 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(283): CController->run('messgaes')
+#2 E:\server\home\localhost\www\yii\testing\framework\web\CWebApplication.php(142): CWebApplication->runController('site/messgaes')
+#3 E:\server\home\localhost\www\yii\testing\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 E:\server\home\localhost\www\yii\testing\demos\soc\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testing/demos/soc/index.php?r=site/messgaes
+HTTP_REFERER=http://localhost/yii/testing/demos/soc/index.php?r=site/index
+---
+2013/01/09 21:19:38 [error] [php] include_once(./demos/soc/language/ru_RU/lang.php): failed to open stream: No such file or directory (/Users/mikhailrepka/Sites/socdem/framework/web/CController.php:791)
+Stack trace:
+#0 /Users/mikhailrepka/Sites/socdem/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#1 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(134): SiteController->runAction()
+#3 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(131): AuthenticateFilter->filter()
+#5 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/mikhailrepka/Sites/socdem/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/mikhailrepka/Sites/socdem/demos/soc/index.php(13): CWebApplication->run()
+REQUEST_URI=/demos/soc/index.php
+in /Users/mikhailrepka/Sites/socdem/demos/soc/protected/controllers/SiteController.php (43)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/index.php (13)
+2013/01/09 21:20:12 [error] [php] include_once(/language/ru_RU/lang.php): failed to open stream: No such file or directory (/Users/mikhailrepka/Sites/socdem/framework/web/CController.php:791)
+Stack trace:
+#0 /Users/mikhailrepka/Sites/socdem/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#1 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(134): SiteController->runAction()
+#3 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(131): AuthenticateFilter->filter()
+#5 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/mikhailrepka/Sites/socdem/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/mikhailrepka/Sites/socdem/demos/soc/index.php(13): CWebApplication->run()
+REQUEST_URI=/demos/soc/index.php
+in /Users/mikhailrepka/Sites/socdem/demos/soc/protected/controllers/SiteController.php (43)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/index.php (13)
+2013/01/09 21:25:26 [error] [php] Undefined variable: lang (/Users/mikhailrepka/Sites/socdem/demos/soc/language/ru_RU/lang.php:4)
+Stack trace:
+#0 /Users/mikhailrepka/Sites/socdem/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#1 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(134): SiteController->runAction()
+#3 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(131): AuthenticateFilter->filter()
+#5 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/mikhailrepka/Sites/socdem/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/mikhailrepka/Sites/socdem/demos/soc/index.php(13): CWebApplication->run()
+REQUEST_URI=/demos/soc/index.php
+in /Users/mikhailrepka/Sites/socdem/demos/soc/language/ru_RU/lang.php (4)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/protected/controllers/SiteController.php (43)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/index.php (13)
+2013/01/09 21:26:09 [error] [php] Uninitialized string offset: 0 (/Users/mikhailrepka/Sites/socdem/demos/soc/language/ru_RU/lang.php:6)
+Stack trace:
+#0 /Users/mikhailrepka/Sites/socdem/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#1 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(134): SiteController->runAction()
+#3 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(131): AuthenticateFilter->filter()
+#5 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/mikhailrepka/Sites/socdem/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/mikhailrepka/Sites/socdem/demos/soc/index.php(13): CWebApplication->run()
+REQUEST_URI=/demos/soc/index.php
+in /Users/mikhailrepka/Sites/socdem/demos/soc/language/ru_RU/lang.php (6)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/protected/controllers/SiteController.php (43)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/index.php (13)
+2013/01/09 21:35:48 [error] [php] Undefined variable: output (/Users/mikhailrepka/Sites/socdem/demos/soc/language/ru_RU/lang.php:14)
+Stack trace:
+#0 /Users/mikhailrepka/Sites/socdem/framework/zii/widgets/CMenu.php(160): CMenu->renderMenu()
+#1 /Users/mikhailrepka/Sites/socdem/framework/web/CBaseController.php(174): CMenu->run()
+#2 /Users/mikhailrepka/Sites/socdem/demos/soc/protected/views/layouts/main.php(37): SiteController->widget()
+#3 /Users/mikhailrepka/Sites/socdem/framework/web/CBaseController.php(127): require()
+#4 /Users/mikhailrepka/Sites/socdem/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#5 /Users/mikhailrepka/Sites/socdem/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#6 /Users/mikhailrepka/Sites/socdem/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#7 /Users/mikhailrepka/Sites/socdem/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#8 /Users/mikhailrepka/Sites/socdem/framework/web/CBaseController.php(207): CContentDecorator->run()
+#9 /Users/mikhailrepka/Sites/socdem/framework/web/CBaseController.php(301): SiteController->endWidget()
+#10 /Users/mikhailrepka/Sites/socdem/demos/soc/protected/views/layouts/column2.php(21): SiteController->endContent()
+#11 /Users/mikhailrepka/Sites/socdem/framework/web/CBaseController.php(127): require()
+#12 /Users/mikhailrepka/Sites/socdem/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#13 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(785): SiteController->renderFile()
+#14 /Users/mikhailrepka/Sites/socdem/demos/soc/protected/controllers/SiteController.php(43): SiteController->render()
+#15 /Users/mikhailrepka/Sites/socdem/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#16 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(134): SiteController->runAction()
+#18 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Users/mikhailrepka/Sites/socdem/framework/web/filters/CFilterChain.php(131): AuthenticateFilter->filter()
+#20 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(292): CFilterChain->run()
+#21 /Users/mikhailrepka/Sites/socdem/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#22 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(283): SiteController->run()
+#23 /Users/mikhailrepka/Sites/socdem/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#24 /Users/mikhailrepka/Sites/socdem/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /Users/mikhailrepka/Sites/socdem/demos/soc/index.php(13): CWebApplication->run()
+REQUEST_URI=/demos/soc/index.php
+in /Users/mikhailrepka/Sites/socdem/demos/soc/language/ru_RU/lang.php (14)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/protected/views/layouts/main.php (37)
+in /Users/mikhailrepka/Sites/socdem/demos/soc/protected/views/layouts/column2.php (21)
